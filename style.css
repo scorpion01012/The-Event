@@ -1,0 +1,89 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0d0d0d;
+  color: white;
+}
+
+.hero {
+  background: url('images/hero.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.overlay h1 {
+  font-size: 42px;
+  color: #00ffff;
+  text-shadow: 0 0 15px #00ffff;
+}
+
+.overlay p {
+  font-size: 18px;
+  color: #ff00ff;
+}
+
+.button {
+  background-color: #00ffff;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 10px #00ffff;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+input, select, button {
+  width: 90%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-size: 16px;
+  border: none;
+}
+
+button {
+  background-color: #ff00ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff00ff;
+}
+
+.payment-info {
+  background-color: #111;
+  color: #0ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #0ff;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #000;
+}
+
+footer a {
+  color: #00ffff;
+  text-decoration: none;
+}

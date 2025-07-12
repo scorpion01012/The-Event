@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hilton Dead Sea - 8/8</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay">
+      <h1>🔥 The Event - Hilton Dead Sea</h1>
+      <p>Thursday, August 8, 2025</p>
+      <div id="countdown"></div>
+      <a href="#booking" class="button">Book your ticket now!</a>
+      
+    </div>
+  </header>
+  <!-- ===== Booking Section ===== -->
+<section id="booking" class="wow fadeInUp" style="margin-top: 100px;">
+  <div class="container">
+    <div class="section-header">
+      <h2>For booking by (CLIQ)
+        للحجز عبر (CLIQ)
+      </h2>
+      <p>املأ النموذج التالي ثم أرسل إثبات الدفع على الإيميل.</p>
+    </div>
+
+    <form id="simpleBookingForm">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <input type="text" name="name" class="form-control" placeholder="Full Name" required />
+        </div>
+        <div class="form-group col-md-6">
+          <select name="ticket" class="form-control" required>
+            <option value="">Ticket Type</option>
+            <option value="VIP">VIP</option>
+            <option value="Regular">Standard</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <input type="tel" name="phone" class="form-control" placeholder="Phone" required />
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Book</button>
+      </div>
+    </form>
+
+    <div id="afterSubmit" style="display: none; margin-top: 30px; text-align: center;">
+      <h4>✅ تم استلام طلبك!</h4>
+      <p>لإتمام الحجز، يرجى إرسال صورة إثبات الدفع عبر CliQ:</p>
+      <form id="confirmPaymentForm">
+        <input type="hidden" name="name" id="confirmedName" />
+        <input type="hidden" name="ticket" id="confirmedTicket" />
+        <input type="hidden" name="phone" id="confirmedPhone" />
+        <button type="submit" style="margin-top: 20px; background-color: #00ff99; padding: 10px 20px; border: none; border-radius: 5px;">✅ تم الدفع</button>
+      </form>
+      
+      <p id="confirmationMessage" style="margin-top: 10px; color: #00ffcc;"></p>
+    
+      <div style="background-color: #111; color: #0ff; padding: 20px; border-radius: 10px; display: inline-block; box-shadow: 0 0 15px #0ff;">
+        <p style="font-size: 18px;">📱 رقم CliQ:</p>
+        <p style="font-size: 24px;"><strong>0775008331</strong></p>
+        <p>أو الاسم المستعار:</p>
+        <p style="font-size: 20px;"><strong>@primeconnectsolutionspcs@gmail.com</strong></p>
+      </div>
+    
+      <p style="margin-top: 20px;">
+        📩 بعد الدفع، يرجى إرسال صورة إثبات التحويل إلى:<br />
+        <strong>primeconnectsolutionspcs@gmail.com</strong>
+      </p>
+    
+      <p>📝 تأكد من كتابة اسمك الكامل في الرسالة لمطابقة الحجز.</p>
+    </div>
+
+    
+</section>
+
+  <section class="about">
+    <h2>About Event</h2>
+    <p>A magical night of music and neon lights on the shores of the Dead Sea. An international DJ and unforgettable vibes!
+      </p>
+  </section>
+
+  <section id="booking" class="form-section">
+    <h2>Booking Form</h2>
+    <form id="ticketForm">
+      <input type="text" name="name" placeholder="Full name" required />
+      <input type="email" name="email" placeholder="E-mail" required />
+      <input type="number" name="tickets" placeholder="Number of tickets" min="1" required />
+      <select name="type">
+        <option value="عادية">Standard Ticket</option>
+        <option value="VIP">VIB Ticket</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="responseMessage"></p>
+  </section>
+
+  <footer>
+    <p>Follow Us For More <a href="#" target="_blank">Instagram</a></p>
+  </footer>
+</body>
+</html>
